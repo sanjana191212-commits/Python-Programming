@@ -1,0 +1,63 @@
+print("=====================")
+print("  Welcome to Uber!  ")
+print("=====================")
+print()
+
+print("Step 1: Pick your vehicle")
+print(" 1 - Bike")
+print("2 - Car")
+print()
+
+choice = int(input("Enter 1 or 2"))
+print()
+
+if choice == 1:
+    #Nested if-else - runs only when choice is 1
+    print("Step 2: Pick your bike type")
+    print("  1 - GT650")
+    print("  2 - Bullet")
+    print()
+
+    bike_type = int(input("Enter 1 or 2: "))
+    print()
+
+    if bike_type == 1:
+        print("You picked : GT650")
+        print("Top speed : 80 km/h")
+        print("Best for : City roads")
+    else:
+        print("You picked : Bullet")
+        print("Top speed : 40 km/h")
+        print("Best for : off-road trails")
+
+elif choice == 2:
+    # Nested if-else - runs only when choice is 2
+    print("Step 2: Pick your car type")
+    print(" 1 - Bronco sport")
+    print(" 2 - Mustang 1969")
+    print()
+
+    car_type = int(input("Enter 1 or 2:"))
+    print()
+
+    if car_type == 1:
+        print("You picked : Bronco sport")
+        print("Seats : 5 passengers")
+        print("Best for : Family trips")
+    else:
+        print("You picked : Mustang 1969")
+        print("Seats : 2 passengers")
+        print("Best for : Off-road adventures")
+
+else:
+    print("That was not a valid choice.")
+    print("Please enter 1 for Bike or 2 for Car.")
+
+print()
+print("==============================")
+print("  Your custom ride is ready!  ")
+print("  Enjoy the journey!          ")
+print("==============================")
+
+
+
